@@ -248,6 +248,10 @@ button{
     }
 }
 @media only screen and (min-width: 992px){
+    .centerbg{
+        animation-name: first-anime;
+        animation-duration: 5s;
+    }
     .second-section{
         display: flex;
         animation-name: maker;
@@ -263,18 +267,25 @@ button{
     }
     #flex1{
         margin-left: 0em;
+        animation-name: flex1;
+        animation-duration: 5s;
     }
     #flex2{
         margin-right: 0em;
         margin-top: 7em;
+        animation-name: flex2;
+        animation-duration: 5s;
     }
     #flex3{
         margin-left: 0em;
+        animation-name: flex3;
+        animation-duration: 5s;
     }
     #flex4{
         margin-right: 2em;
-        align-self: center;
         margin-top: 7em;
+        animation-name: flex4;
+        animation-duration: 5s;
     }
     .price-table{
         display: flex;
@@ -286,6 +297,61 @@ button{
         width: 30%;
     }
     @keyframes maker {
-        
+        from{
+            color: hsl(179, 80%, 58%);
+        }
+        to{
+            color: hsl(206, 84%, 22%);
+        }
+    }
+    @keyframes flex1 {
+        from{
+        margin-top: 7em;
+        opacity: 1;
+        }
+        to{
+            margin-top: 0em;
+            opacity: 0.5;
+        }
+    }
+    @keyframes flex2 {
+        from{
+            margin-top: 0em;
+            opacity: 0.5;
+        }
+        to{
+            margin-top: 7em;
+            opacity: 1;
+        }
+    }
+    @keyframes flex3 {
+        from{
+            margin-top: 7em;
+            opacity: 1;
+        }
+        to{
+            margin-top: 0em;
+            opacity: 0.5;
+        }
+    }
+    @keyframes flex4 {
+        from{
+            margin-top: 0em;
+            opacity: 0.5;
+        }
+        to{
+            margin-top: 7em;
+            opacity: 1;
+        }
+    }
+    @keyframes first-anime {
+        from{
+            margin-top: 7em;
+            opacity: 0.5;
+        }
+        to{
+            margin-top: 0em;
+            opacity: 1;
+        }
     }
 }
